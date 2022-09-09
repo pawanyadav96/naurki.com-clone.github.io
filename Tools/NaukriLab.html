@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #FFFFFF;
+            margin: 0px;
+        }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #one{
+            width: 70%;
+            display: flex;
+            margin-top: 50px
+        }
+        button{
+            width: 210px;
+            height: 130px;
+            border-radius: 5px;
+            box-shadow: 1px 4px 5px 0 #524c52;
+            border: 0px;
+            background-color: white;
+            cursor: pointer;
+        }
+        #image{
+            width: 80px;
+            height: 65px;
+        }
+        #two{
+            width: 70%;
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+        #b1{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+        }
+        #b2{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+        }
+        #b3{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+        }
+        #b4{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+        }
+        #b5{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+            margin-left: 0%;
+        }
+        #b6{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+            margin-left: 0%;
+        }
+        #b7{
+            width: 25%;
+            margin-right: 20px;
+            text-align: center;
+            margin-left: 0%;
+        }
+        #b8{
+            width: 25%;
+        }
+        #two_h3{
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p{
+            color: #333333;
+            font-size: 14px;
+        }
+        span{
+            color: #5e81f4;
+            margin-left: 5px;
+        }
+        #main{
+            padding-top: 40px;
+        }
+        #navbar{
+            padding-bottom: 50px;
+        }
+        .A_links{
+            text-decoration: #656565;
+            color: #656565;
+            list-style: none;
+            width: 150px;
+        }
+
+        .A_links:hover{
+        color: #4a90e2;
+        }
+    </style>
+            <link rel="stylesheet" href="./common/footer.css">
+            <link rel="stylesheet" href="./common/navbar.css">
+            <link rel="stylesheet" href="./common/searchBox.css">
+</head>
+<body>
+    <div id="layout">
+
+        <div id="navbar"></div>
+        <div id="MainBoxSearch"></div>
+    <div id="main">
+        <div id="one"></div>
+
+        <div id="two"></div>
+    </div>
+
+    <div id="footer" style="background-color: #2e3339; margin-top:60px;"></div>
+</div>
+</body>
+</html>
+
+<script type="module">
+
+import navbar1 from "./common/navbar1.js"
+
+document.getElementById('MainBoxSearch').innerHTML = navbar1()
+
+import navbar from "./common/navbar.js"
+
+document.getElementById('navbar').innerHTML = navbar()
+
+import footer from "./common/footer.js"
+
+document.getElementById('footer').innerHTML = footer()
+
+import one from './NaukriLab/one.js'
+
+document.getElementById('one').innerHTML = one()
+
+import two from './NaukriLab/two.js'
+
+document.getElementById('two').innerHTML = two()
+
+</script>
